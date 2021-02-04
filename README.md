@@ -6,3 +6,7 @@ https://github.com/Sunert/Scripts/blob/master/Task/baidu_speed.js
 #### 步步宝
 
 https://github.com/adwktt/adwktt/blob/master/BBB.js
+
+
+#### 一刻
+https://github.com/adwktt/adwktt/blob/master/yk.js 
