@@ -56,7 +56,7 @@ $.idx = ($.idx = ($.getval("jrttcount") || "1") - 1) > 0 ? `${$.idx + 1}` : ""; 
 const signurlArr = [],signkeyArr=[]
 const farmurlArr = [],farmkeyArr=[]
 const readurlArr = [],readkeyArr=[]
-let signurl = $.getdata('signurl')
+let signurl = process.env.JRTTSIGNURL
 let signkey = $.getdata('signkey')
 
 let farmurl = $.getdata('farmurl')
