@@ -76,11 +76,11 @@ if ($.isNode()) {
 }
 
 const userheaderArr = [];
-let userheaderVal = "";
+let userheaderVal = "oA0GbjvhVPyRqG2g8-44YdeCMRCc&_appName=ios&_dev=iPhone9,1&_devId=82d51e8614b6e1719b8a2f02712b966056b577b3&_appver=8.7.1&_ifChId=&_isChId=1&_osVer=14.4&openid=oA0GbjvhVPyRqG2g8-44YdeCMRCc&fskey=v0aaf8a822160031b8a41c55a49876e0&appid=wxcbc3ab3807acb685&access_token=41_gq3LbIX4v0fLOYpQpPa2CiyGHDzN0I4pYjEUMtcal79kwE4cFaIZxmgEWCe1CYMHhLqCzX6TcV-BQaYFCJneOpdXNla8Ydt_6P6AfimsCZI&buildType=store&check=11&_idfa=00000000-0000-0000-0000-000000000000&lang=zh_CN";
 let USERHEADER = [];
 
 const userkeyArr = [];
-let userkeyVal = "";
+let userkeyVal = "pgv_pvid=7891151958; ts_last=/activity/page/welwareCenter/; ts_refer=zqact.tenpay.com/activity/page/activityForward/; ts_sid=1179229753; ts_uid=7818522140";
 let USERKEY = [];
 
 const cashheaderArr = [];
@@ -88,19 +88,19 @@ let cashheaderVal = "";
 let CASHHEADER = [];
 
 const signheaderArr = [];
-let signheaderVal = "";
+let signheaderVal = "oA0GbjvhVPyRqG2g8-44YdeCMRCc&fskey=v0aaf8a822160031b8a41c55a49876e0&channel=1&access_token=41_gq3LbIX4v0fLOYpQpPa2CiyGHDzN0I4pYjEUMtcal79kwE4cFaIZxmgEWCe1CYMHhLqCzX6TcV-BQaYFCJneOpdXNla8Ydt_6P6AfimsCZI&_appName=ios&_appver=8.7.1&_osVer=14.4&_devId=82d51e8614b6e1719b8a2f02712b966056b577b3";
 let SINGHEADER = [];
 
 const signkeyArr = [];
-let signkeyVal = "";
+let signkeyVal = "pgv_pvid=7891151958; ts_last=/activity/page/guessRiseFall/; ts_sid=1511636285; ts_uid=3630249060; ts_refer=zqact03.tenpay.com/activity/page/raisebull/";
 let SINGKEY = [];
 
 const taskheaderArr = [];
-let taskheaderVal = "";
+let taskheaderVal = "&_dev=iPhone9,1&_devId=82d51e8614b6e1719b8a2f02712b966056b577b3&_appver=8.7.1&_ifChId=&_isChId=1&_osVer=14.3&openid=oA0GbjvhVPyRqG2g8-44YdeCMRCc&fskey=v0aaf8a822160031b8a41c55a49876e0&appid=wxcbc3ab3807acb685&access_token=41_gq3LbIX4v0fLOYpQpPa2CjpPBQ8Sm1N-bp_dOJLd0tpywFFVbotexnCYIl1oYstsLnt-_pr0wZ_PCC5qo-lj-NFjJlOuBMQyHip7h7_o-k4&buildType=store&check=11&_idfa=00000000-0000-0000-0000-000000000000&lang=zh_CN";
 let TASKHEADER = [];
 
 const taskkeyArr = [];
-let taskkeyVal = "";
+let taskkeyVal = "pgv_info=ssid=s2572679046; pgv_pvid=7891151958; ts_uid=7818522140; ts_refer=zqact.tenpay.com/activity/page/activityForward/";
 let TASKKEY = [];
 
 const wxtaskkeyArr = [];
