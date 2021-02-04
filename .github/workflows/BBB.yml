@@ -23,6 +23,6 @@ jobs:
             - name: "运行【步步宝】"
               if: env.BBB_COOKIE
               run: |
-                  node BBB.js
+                  node Task/BBB.js
               env:
                   BBB_COOKIE: ${{ secrets.BBB_COOKIE }}
