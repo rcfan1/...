@@ -29,7 +29,7 @@ jobs:
                   USERKEY: ${{ secrets.USERKEY }}
                   CASHHEADER: ${{ secrets.CASHHEADER }}
                   SINGHEADER: ${{ secrets.SINGHEADER }}
+                  SINGHEADER: ${{ secrets.SINGHEADER }}
                   TASKHEADER: ${{ secrets.TASKHEADER }}
-                  TASKKEY: ${{ secrets.TASKKEY }}
                   TASKKEY: ${{ secrets.TASKKEY }}
                   WXTASKKEY: ${{ secrets.WXTASKKEY }}
