@@ -76,11 +76,11 @@ if ($.isNode()) {
 }
 
 const userheaderArr = [];
-let userheaderVal = "";
+userheaderVal = process.env.USERHEADER
 let USERHEADER = [];
 
 const userkeyArr = [];
-let userkeyVal = "";
+let userkeyVal = process.env.USERKEY
 let USERKEY = [];
 
 const cashheaderArr = [];
@@ -88,19 +88,19 @@ let cashheaderVal = "";
 let CASHHEADER = [];
 
 const signheaderArr = [];
-let signheaderVal = "";
+let signheaderVal = process.env.SINGHEADER
 let SINGHEADER = [];
 
 const signkeyArr = [];
-let signkeyVal = "";
+let signkeyVal = process.env.SINGKEY
 let SINGKEY = [];
 
 const taskheaderArr = [];
-let taskheaderVal = "";
+let taskheaderVal = process.env.TASKHEADER
 let TASKHEADER = [];
 
 const taskkeyArr = [];
-let taskkeyVal = "";
+let taskkeyVal = process.env.TASKKEY
 let TASKKEY = [];
 
 const wxtaskkeyArr = [];
