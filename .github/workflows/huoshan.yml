@@ -23,7 +23,7 @@ jobs:
             - name: "运行【抖音火山】"
               if: env.HSURL
         run: |
-          node huoshan.js
+          node Task/huoshan.js
         env:
           HSURL: ${{ secrets.HSURL }}
           HSHEADER: ${{ secrets.HSHEADER }}
