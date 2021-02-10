@@ -25,4 +25,4 @@ jobs:
               run: |
                   node Task/BBB2.js
               env:
-                  BBB_COOKIE: ${{ secrets.BBB_COOKIE }}
+                  BBB_COOKIE2: ${{ secrets.BBB_COOKIE2 }}
