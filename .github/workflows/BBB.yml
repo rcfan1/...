@@ -20,7 +20,7 @@ jobs:
             - name: npm install
               run: |
                   npm install
-            - name: "运行【步步宝】"
+            - name: "运行【bbb】"
               if: env.BBB_COOKIE
               run: |
                   node Task/BBB.js
