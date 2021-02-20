@@ -34,7 +34,7 @@ jobs:
       - name: '运行 【zmsp】'
         if: env.ZM_HD
         run: |
-          node scripts/zmsp.js
+          node Task/zmsp.js
         env:
           PUSH_KEY: ${{ secrets.PUSH_KEY }}
           BARK_PUSH: ${{ secrets.BARK_PUSH }}
