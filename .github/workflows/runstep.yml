@@ -1,4 +1,4 @@
-name: 走路赚
+name: zlz
 
 on:
   workflow_dispatch:
