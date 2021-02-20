@@ -31,7 +31,7 @@ jobs:
       - name: npm install
         run: |
           npm install
-      - name: '运行 【走路赚】'
+      - name: '运行 【zl】'
         run: |
           node Task/runstep.js
         env:
