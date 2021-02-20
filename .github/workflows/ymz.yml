@@ -15,7 +15,7 @@ jobs:
         YMZ_BODY: ${{ secrets.YMZ_BODY }}
         YMZ_BODY1: ${{ secrets.YMZ_BODY1 }}
         TZ: Asia/shanghai
-   steps:
+    steps:
       - name: Checkout
         uses: actions/checkout@v2
       - name: Use Node.js ${{ matrix.node-version }}
