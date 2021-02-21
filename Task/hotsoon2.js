@@ -85,60 +85,60 @@ if (isGetCookie) {
 if ($.isNode()) {
 //sign
   if (process.env.HOTSOONSIGNHEADER2 && process.env.HOTSOONSIGNHEADER2.indexOf('#') > -1) {
-   HOTSOONSIGNHEADER2 = process.env.HOTSOONSIGNHEADER2.split('#');
+   HOTSOONSIGNHEADER = process.env.HOTSOONSIGNHEADER2.split('#');
    console.log(`您选择的是用"#"隔开\n`)
   }
   else if (process.env.HOTSOONSIGNHEADER2 && process.env.HOTSOONSIGNHEADER2.indexOf('\n') > -1) {
-   HOTSOONSIGNHEADER2 = process.env.HOTSOONSIGNHEADER2.split('\n');
+   HOTSOONSIGNHEADER = process.env.HOTSOONSIGNHEADER2.split('\n');
    console.log(`您选择的是用换行隔开\n`)
   } else {
-   HOTSOONSIGNHEADER2 = process.env.HOTSOONSIGNHEADER2.split()
+   HOTSOONSIGNHEADER = process.env.HOTSOONSIGNHEADER2.split()
   };
   if (process.env.HOTSOONSIGNKEY2&& process.env.HOTSOONSIGNKEY2.indexOf('#') > -1) {
-   HOTSOONSIGNKEY2 = process.env.HOTSOONSIGNKEY2.split('#');
+   HOTSOONSIGNKEY = process.env.HOTSOONSIGNKEY2.split('#');
   }
   else if (process.env.HOTSOONSIGNKEY2 && process.env.HOTSOONSIGNKEY2.split('\n').length > 0) {
-   HOTSOONSIGNKEY2 = process.env.HOTSOONSIGNKEY2.split('\n');
+   HOTSOONSIGNKEY = process.env.HOTSOONSIGNKEY2.split('\n');
   } else  {
    hotsignkey = process.env.HOTSOONSIGNKEY2.split()
   };
 //AD
 if (process.env.HOTSOONADHEADER2 && process.env.HOTSOONADHEADER2.indexOf('#') > -1) {
-   HOTSOONADHEADER2 = process.env.HOTSOONADHEADER2.split('#');
+   HOTSOONADHEADER = process.env.HOTSOONADHEADER2.split('#');
    console.log(`您选择的是用"#"隔开\n`)
   }
   else if (process.env.HOTSOONADHEADER2 && process.env.HOTSOONADHEADER2.indexOf('\n') > -1) {
-   HOTSOONADHEADER2 = process.env.HOTSOONADHEADER2.split('\n');
+   HOTSOONADHEADER = process.env.HOTSOONADHEADER2.split('\n');
    console.log(`您选择的是用换行隔开\n`)
   } else {
-   HOTSOONADHEADER2 = process.env.HOTSOONADHEADER2.split()
+   HOTSOONADHEADER = process.env.HOTSOONADHEADER2.split()
   };
   if (process.env. HOTSOONADKEY2&& process.env.HOTSOONADKEY2.indexOf('#') > -1) {
-   HOTSOONADKEY2 = process.env.HOTSOONADKEY2.split('#');
+   HOTSOONADKEY = process.env.HOTSOONADKEY2.split('#');
   }
   else if (process.env.HOTSOONADKEY2 && process.env.HOTSOONADKEY2.split('\n').length > 0) {
-   HOTSOONADKEY2 = process.env.HOTSOONADKEY2.split('\n');
+   HOTSOONADKEY = process.env.HOTSOONADKEY2.split('\n');
   } else  {
-   HOTSOONADKEY2 = process.env.HOTSOONADKEY2.split()
+   HOTSOONADKEY = process.env.HOTSOONADKEY2.split()
   };
 //video
 if (process.env.HOTSOONREADHEADER2 && process.env.HOTSOONREADHEADER2.indexOf('#') > -1) {
-   HOTSOONREADHEADER2 = process.env.HOTSOONREADHEADER2.split('#');
+   HOTSOONREADHEADER = process.env.HOTSOONREADHEADER2.split('#');
    console.log(`您选择的是用"#"隔开\n`)
   }
   else if (process.env.HOTSOONREADHEADER2 && process.env.HOTSOONREADHEADER2.indexOf('\n') > -1) {
-   HOTSOONREADHEADER2 = process.env.HOTSOONREADHEADER2.split('\n');
+   HOTSOONREADHEADER = process.env.HOTSOONREADHEADER2.split('\n');
    console.log(`您选择的是用换行隔开\n`)
   } else {
-   HOTSOONREADHEADER2 = process.env.HOTSOONREADHEADER2.split()
+   HOTSOONREADHEADER = process.env.HOTSOONREADHEADER2.split()
   };
   if (process.env. HOTSOONREADKEY2&& process.env.HOTSOONREADKEY2.indexOf('#') > -1) {
-   HOTSOONREADKEY2 = process.env.HOTSOONREADKEY2.split('#');
+   HOTSOONREADKEY = process.env.HOTSOONREADKEY2.split('#');
   }
   else if (process.env.HOTSOONREADKEY2 && process.env.HOTSOONREADKEY2.split('\n').length > 0) {
-   HOTSOONREADKEY2 = process.env.HOTSOONREADKEY2.split('\n');
+   HOTSOONREADKEY = process.env.HOTSOONREADKEY2.split('\n');
   } else  {
-   HOTSOONREADKEY2 = process.env.HOTSOONREADKEY2.split()
+   HOTSOONREADKEY = process.env.HOTSOONREADKEY2.split()
   };
 //sign
   Object.keys(HOTSOONSIGNHEADER2).forEach((item) => {
