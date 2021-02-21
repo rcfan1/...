@@ -1,20 +1,20 @@
-name: QQ阅读
-on:
-   workflow_dispatch:
-   schedule:
-     - cron: '*/10 * * * *'
-   watch:
-     types: started
-   repository_dispatch:
-     types: _
 
+name: QQread
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '5,35 8-23 * * *'
+  watch:
+    types: started
+  repository_dispatch:
+    types: QQread
 jobs:
-   build:
-     runs-on: ubuntu-latest
-     if: github.event.repository.owner.id == github.event.sender.id
-     env:
-         QQ_QQreadURL: ${{ secrets.QQ_QQreadURL }}
-     steps:
+  build:
+
+    runs-on: ubuntu-latest
+    if: github.event.repository.owner.id == github.event.sender.id
+    steps:
       - name: Checkout
         uses: actions/checkout@v2
       - name: Use Node.js ${{ matrix.node-version }}
@@ -31,9 +31,17 @@ jobs:
       - name: npm install
         run: |
           npm install
-            - name: '运行 【QQ阅读】'
-            run:|
-           node Task/QQread.js
-            env:
-           TG_BOT_TOKEN: ${{ secrets.TG_BOT_TOKEN }}
-           TG_USER_ID: ${{ secrets.TG_USER_ID }}
+      - name: '运行 【QQread】'
+        run: |
+          node Task/QQread.js
+        env:
+          QQ_QQreadURL: ${{ secrets.QQ_QQreadURL }}
+          JD_DEBUG: ${{ secrets.JD_DEBUG }}
+          PUSH_KEY: ${{ secrets.PUSH_KEY }}
+          BARK_PUSH: ${{ secrets.BARK_PUSH }}
+          TG_BOT_TOKEN: ${{ secrets.TG_BOT_TOKEN }}
+          TG_USER_ID: ${{ secrets.TG_USER_ID }}
+          BARK_SOUND: ${{ secrets.BARK_SOUND }}
+          DD_BOT_TOKEN: ${{ secrets.DD_BOT_TOKEN }}
+          DD_BOT_SECRET: ${{ secrets.DD_BOT_SECRET }}
+          IGOT_PUSH_KEY: ${{ secrets.IGOT_PUSH_KEY }}
