@@ -16,20 +16,27 @@ name: QQ阅读
      env:
          QQ_QQreadURL: ${{ secrets.QQ_QQreadURL }}
      steps:
-       - name: Checkout
-         run: |
-           git clone https://github.com/ziye66666/JavaScript.git ~/JavaScript
-       - name: Use Node.js 12.x
-         uses: actions/setup-node@v1
-         with:
-           node-version: 12.x
+      - name: Checkout
+        uses: actions/checkout@v2
+      - name: Use Node.js ${{ matrix.node-version }}
+        uses: actions/setup-node@v1
+        with:
+          node-version: ${{ matrix.node-version }}
+      - name: Cache node_modules
+        uses: actions/cache@v2 # 使用 GitHub 官方缓存 Action。
+        env:
+          cache-name: cache-node-modules
+        with:
+          path: node_modules
+          key: ${{ runner.os }}-${{ env.cache-name }}-${{ hashFiles('package-lock.json') }} # 使用 package-lock.json 的 Hash 作为缓存的 key。也可以使用 package.json 代替
+      - name: npm install
+        run: |
+          npm install
        - name: npm install
          run: |
-           cd ~/JavaScript
            npm install
        - name: '运行 【QQ阅读】'
          run: |
-           cd ~/JavaScript
            node Task/QQread.js
          env:
            TG_BOT_TOKEN: ${{ secrets.TG_BOT_TOKEN }}
