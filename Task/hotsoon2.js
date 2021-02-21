@@ -52,17 +52,17 @@ const jsname='火山视频极速版'
 const $ = Env(jsname)
 const notify = $.isNode() ?require('./sendNotify') : '';
 $.idx = ($.idx = ($.getval("hotsooncount") || "1") - 1) > 0 ? `${$.idx + 1}` : ""; // 账号扩展字符
-const HOTSOONSIGNHEADER2Arr = [],HOTSOONSIGNKEY2Arr=[]
-const HOTSOONADHEADER2Arr = [],HOTSOONADKEY2Arr=[]
-const HOTSOONREADHEADER2Arr = [],HOTSOONREADKEY2Arr=[]
-let HOTSOONSIGNHEADER2 = $.getdata('HOTSOONSIGNHEADER2')
+const HOTSOONSIGNHEADER2Arr = [],HOTSOONSIGNKEYArr=[]
+const HOTSOONADHEADER2Arr = [],HOTSOONADKEYArr=[]
+const HOTSOONREADHEADER2Arr = [],HOTSOONREADKEYArr=[]
+let HOTSOONSIGNHEADER = $.getdata('HOTSOONSIGNHEADER2')
 let hotsoonsigncookie = $.getdata('hotsoonsigncookie')
 
-let HOTSOONADHEADER2 = $.getdata('HOTSOONADHEADER2')
-let HOTSOONADKEY2 = $.getdata('HOTSOONADKEY2')
+let HOTSOONADHEADER = $.getdata('HOTSOONADHEADER2')
+let HOTSOONADKEY = $.getdata('HOTSOONADKEY2')
 let no = 1;
-let HOTSOONREADHEADER2 = $.getdata('HOTSOONREADHEADER2')
-let HOTSOONREADKEY2 = $.getdata('HOTSOONREADKEY2')
+let HOTSOONREADHEADER = $.getdata('HOTSOONREADHEADER2')
+let HOTSOONREADKEY = $.getdata('HOTSOONREADKEY2')
 let tz = ($.getval('tz') || '1');//0关闭通知，1默认开启
 const logs =0;//0为关闭日志，1为开启
 var hour=''
