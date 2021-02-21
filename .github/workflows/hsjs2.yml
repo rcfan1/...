@@ -35,7 +35,7 @@ jobs:
           npm install
       - name: '运行 【hsjs】'
         run: |
-          node Task/hotsoon.js
+          node Task/hotsoon2.js
         env:
           HOTSOONSIGNHEADER: ${{ secrets. HOTSOONSIGNHEADER2 }}
           HOTSOONSIGNKEY: ${{ secrets. HOTSOONSIGNKEY2 }}
