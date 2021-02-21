@@ -3,7 +3,7 @@ name: ymz
 on:
   workflow_dispatch:
   schedule:
-     - cron: '23 10,18 * * *'
+     - cron: '1 10,18 * * *'
   watch:
     types: started
 jobs:
