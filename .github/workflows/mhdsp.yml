@@ -3,7 +3,7 @@ name: mhdsp
 on:
   workflow_dispatch:
   schedule:
-     - cron: '23 10,16 * * *'
+     - cron: '23 10,12 * * *'
   watch:
     types: started
 jobs:
