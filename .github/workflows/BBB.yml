@@ -3,7 +3,7 @@ name: bbb
 on:
     workflow_dispatch:
     schedule:
-        - cron: "20,30 12,19 * * *"
+        - cron: "0 8-23/2 * * *"
     watch:
         types: [started]
 
