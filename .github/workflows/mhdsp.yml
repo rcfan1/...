@@ -1,4 +1,4 @@
-name: mhdsp
+name: 陌嗨短视频
 
 on:
   workflow_dispatch:
@@ -30,7 +30,7 @@ jobs:
       - name: npm install
         run: |
           npm install
-      - name: '运行 【mhdsp】'
+      - name: '运行 【陌嗨短视频】'
         if: env.MH_HD
         run: |
           node Task/mhdsp.js
