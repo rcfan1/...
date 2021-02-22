@@ -1,5 +1,5 @@
 
-name: wb
+name: 微博签到
 
 on:
   workflow_dispatch:
@@ -27,7 +27,7 @@ jobs:
         run: |
           cd ~/Scripts
           npm install
-      - name: '运行 【wb】'
+      - name: '运行 【微博签到】'
         if: env.WB_TOKEN
         run: |
           cd ~/Scripts
