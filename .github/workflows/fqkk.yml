@@ -1,4 +1,4 @@
-name: fqkk
+name: 番茄看看
 
 
 on:
@@ -26,7 +26,7 @@ jobs:
       - name: npm install
         run: |
           npm install
-      - name: '运行 【fqkk】'
+      - name: '运行 【番茄看看】'
         if: env.FQKK_HD
         run: |
           node Task/fqkk.js
