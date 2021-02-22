@@ -1,4 +1,4 @@
-name: jqb
+name: 金钱豹
 
 
 on:
@@ -34,7 +34,7 @@ jobs:
       - name: npm install
         run: |
           npm install
-      - name: '运行 【jqb】'
+      - name: '运行 【金钱豹】'
         if: env.JQB_HD
         run: |
           node Task/jqb.js
