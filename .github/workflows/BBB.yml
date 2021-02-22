@@ -1,4 +1,4 @@
-name: bbb
+name: 步步宝
 
 on:
     workflow_dispatch:
@@ -20,7 +20,7 @@ jobs:
             - name: npm install
               run: |
                   npm install
-            - name: "运行【bbb】"
+            - name: "运行【步步宝】"
               if: env.BBB_COOKIE
               run: |
                   node Task/BBB.js
