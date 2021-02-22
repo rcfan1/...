@@ -1,4 +1,4 @@
-name: zlz
+name: 走路赚
 
 on:
   workflow_dispatch:
@@ -31,7 +31,7 @@ jobs:
       - name: npm install
         run: |
           npm install
-      - name: '运行 【zl】'
+      - name: '运行 【走路赚】'
         run: |
           node Task/runstep.js
         env:
