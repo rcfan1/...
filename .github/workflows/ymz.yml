@@ -1,4 +1,4 @@
-name: ymz
+name: 羊毛赚
 
 on:
   workflow_dispatch:
@@ -32,7 +32,7 @@ jobs:
       - name: npm install
         run: |
           npm install
-      - name: '运行 【ymz】'
+      - name: '运行 【羊毛赚】'
         if: env.YMZ_HD
         run: |
           node Task/ymz.js
