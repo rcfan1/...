@@ -35,9 +35,6 @@ jobs:
       - name: npm install
         run: |
           npm install
-        if: env.XP_refreshTOKEN
-         run:|
-          npm install
       - name: '运行 【笑谱】'
         if: env.XP_refreshTOKEN
         run: |
