@@ -1,4 +1,4 @@
-name: txzxg
+name: 腾讯自选股
 
 on:
     workflow_dispatch:
@@ -20,7 +20,7 @@ jobs:
             - name: npm install
               run: |
                   npm install
-            - name: "运行【txzxg】"
+            - name: "运行【腾讯自选股】"
               if: env.USERKEY
               run: |
                   node Task/txstockqx.js
