@@ -3,7 +3,7 @@ name: 步步宝
 on:
     workflow_dispatch:
     schedule:
-        - cron: "0 8-23/2 * * *"
+        - cron: "0 */2 * * *"
     watch:
         types: [started]
 
@@ -21,8 +21,6 @@ jobs:
               run: |
                   npm install
             - name: "运行【步步宝】"
-              if: env.BBB_COOKIE
               run: |
                   node Task/BBB.js
-              env:
-                  BBB_COOKIE: ${{ secrets.BBB_COOKIE }}
+          
