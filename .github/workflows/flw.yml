@@ -3,7 +3,7 @@ name: 返利网
 on:
   workflow_dispatch:
   schedule:
-     - cron: '30,40 10,11,19 * * *'
+     - cron: '30,40 10,11,23 * * *'
   watch:
     types: started
 jobs:
