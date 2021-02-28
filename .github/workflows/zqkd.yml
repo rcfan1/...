@@ -1,4 +1,4 @@
-name: 中青看点1
+name: ZQKD
 
 on:
   workflow_dispatch:
@@ -22,6 +22,6 @@ jobs:
           npm install cron
           npm install request
           npm install md5-node
-      - name: '运行 【youthshare】'
+      - name: '运行 【ZQKD】'
         run: |
           node Task/youthshare.js
