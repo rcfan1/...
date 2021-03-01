@@ -14,6 +14,10 @@ jobs:
     env:
         FQKK_URL: ${{ secrets.FQKK_URL }}
         FQKK_HD: ${{ secrets.FQKK_HD }}       
+        YSM_URL: ${{ secrets.YSM_URL }}
+        YSM_HD: ${{ secrets.YSM_HD }}    
+        YSM_BD: ${{ secrets.YSM_BD }} 
+        YSM2_BD: ${{ secrets.YSM2_BD }} 
         TZ: Asia/shanghai
     steps:
       - name: Checkout
@@ -30,6 +34,10 @@ jobs:
         if: env.FQKK_HD
         run: |
           node Task/fqkk.js
+      - name: '运行 【云扫码】'
+        if: env.YSM_HD
+        run: |
+          node Task/ysm.js
         env:
           PUSH_KEY: ${{ secrets.PUSH_KEY }}
           BARK_PUSH: ${{ secrets.BARK_PUSH }}
