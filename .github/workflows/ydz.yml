@@ -27,7 +27,6 @@ jobs:
           cd ~/...
           npm install
       - name: '运行 【悦动族】'
-        if: env.XL_URL
         run: |
           cd ~/...
           node Task/yuedongzu.js
