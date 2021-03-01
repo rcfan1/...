@@ -10,7 +10,6 @@ on:
   watch:
     types: started
   repository_dispatch:
-    types: hotsoon
 jobs:
   build:
 
@@ -40,18 +39,18 @@ jobs:
         run: |
           node Task/dyjsb.js
         env:
-          SIGNHEADER: ${{ secrets.SIGNHEADER }}
-          SIGNCOOKIE: ${{ secrets.SIGNCOOKIE }}
-          STEPHEADER: ${{ secrets.STEPHEADER }}
-          STEPKEY: ${{ secrets.STEPKEY }}
-          READHEADER: ${{ secrets.READHEADER }}
-          READKEY: ${{ secrets.READKEY }}
           HOTSOONSIGNHEADER: ${{ secrets. HOTSOONSIGNHEADER }}
           HOTSOONSIGNKEY: ${{ secrets. HOTSOONSIGNKEY }}
           HOTSOONADHEADER: ${{ secrets. HOTSOONADHEADER }}
           HOTSOONADKEY: ${{ secrets. HOTSOONADKEY }}
           HOTSOONREADHEADER: ${{ secrets. HOTSOONREADHEADER }}
           HOTSOONREADKEY: ${{ secrets. HOTSOONREADKEY }}
+          SIGNHEADER: ${{ secrets.SIGNHEADER }}
+          SIGNCOOKIE: ${{ secrets.SIGNCOOKIE }}
+          STEPHEADER: ${{ secrets.STEPHEADER }}
+          STEPKEY: ${{ secrets.STEPKEY }}
+          READHEADER: ${{ secrets.READHEADER }}
+          READKEY: ${{ secrets.READKEY }}
           JD_DEBUG: ${{ secrets.JD_DEBUG }}
           PUSH_KEY: ${{ secrets.PUSH_KEY }}
           BARK_PUSH: ${{ secrets.BARK_PUSH }}
